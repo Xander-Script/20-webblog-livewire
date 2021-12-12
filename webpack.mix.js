@@ -20,3 +20,18 @@ mix.js('resources/js/app.js', 'public/js')
 if (mix.inProduction()) {
     mix.version();
 }
+
+mix.browserSync({
+    proxy: {
+        target: 'localhost:8000',
+        proxyOptions: {
+            xfwd: true // send x-forwarded-for header
+        }
+    },
+    open: false,
+    socket: {
+        domain: 'laravel.localhost'
+    }
+});
+
+mix.disableNotifications();
