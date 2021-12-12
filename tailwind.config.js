@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require("tailwindcss/colors");
 
 module.exports = {
     content: [
@@ -7,6 +8,7 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         './vendor/filament/forms/resources/views/**/*.blade.php',
+        './vendor/filament/tables/resources/views/**/*.blade.php',
     ],
     theme: {
         extend: {
@@ -14,8 +16,10 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                danger: defaultTheme.rose,
-                primary: defaultTheme.blue,
+                danger: colors.rose,
+                primary: colors.blue,
+                success: colors.green,
+                warning: colors.yellow,
             },
         },
     },
