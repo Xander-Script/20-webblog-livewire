@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9904bc9e5fa65b7dedcebd2e234ddfa",
+    "content-hash": "3bf2c1b1c5f244f2ae3c1ee2e6d51ed9",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1689,6 +1689,50 @@
                 "source": "https://github.com/laravel-filament/filament"
             },
             "time": "2021-12-11T09:27:53+00:00"
+        },
+        {
+            "name": "filament/spatie-laravel-translatable-plugin",
+            "version": "v2.5.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-filament/spatie-laravel-translatable-plugin.git",
+                "reference": "90ecfa9d6ad948d76d230e9866a4d6810391d005"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-filament/spatie-laravel-translatable-plugin/zipball/90ecfa9d6ad948d76d230e9866a4d6810391d005",
+                "reference": "90ecfa9d6ad948d76d230e9866a4d6810391d005",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "self.version",
+                "php": "^8.0",
+                "spatie/laravel-translatable": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Filament\\SpatieLaravelTranslatablePluginServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Filament\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Filament support for `spatie/laravel-translatable`.",
+            "homepage": "https://github.com/laravel-filament/filament",
+            "support": {
+                "issues": "https://github.com/laravel-filament/filament/issues",
+                "source": "https://github.com/laravel-filament/filament"
+            },
+            "time": "2021-12-11T09:27:54+00:00"
         },
         {
             "name": "filament/tables",
